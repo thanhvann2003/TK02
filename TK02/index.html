@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <script src="./main.js"></script>
+    <!-- bai 1 -->
+        <h3> Bài 1 : Cơ bản </h3>
+    
+    <div class="bacgrfont">
+        <div class="bai1">     
+            <i class="ti-ruler-alt"></i>
+
+            <div class="title1">
+                <h1> Giải Phương Trình Bậc Nhất </h1>
+            </div>
+            <section>
+                <form action="" name="dataform">
+                    <div class="input-grp">
+                        <label for="">Nhập hệ số a:</label> 
+                        <input class="input-item" type="number" name="hsa">
+                    </div>
+    
+                    <div class="input-grp">
+                        <label for="">Nhập hệ số b:</label> 
+                        <input class="input-item" type="number" name="hsb">
+                    </div>
+    
+                    <div class="button-grp">
+                        <input class="button-item" type="button" value="Giải phương trình " onclick="giaiPhuongtrinh()">
+                    </div>
+                   
+                </form>
+    
+                <div class="result"></div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- Bài 2 -->
+        <h3> Bài 2 : Cơ bản </h3>
+
+    <div class="bai2">
+
+       <form action="" name="dataform-2" class="form-b2">
+        <h1 class="tiude-b2"> Đóng góp ý kiến sản phẩm  </h1>
+            <div class="row">
+                <div class="col">
+                    <label for="">Họ và tên: </label> <br>
+                    <input class="input-grp2" type="text" name="hvt">
+                </div>
+                <div class="col">
+                    <label class="lb-2" for="">Mã thẻ </label> <br>
+                    <input class="input-grp2" type="text" name="mathe" >
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="">Số điện thoại:</label> <br>
+                    <input class="input-grp2" type="text" name="sdt" >
+                </div>
+                <div class="col">
+                    <label class="lb-2" for="">Email:</label> <br>
+                    <input class="input-grp2" type="email" name="email" >
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="">Mã hóa đơn:  </label> <br>
+                    <input class="input-grp2" type="text" name="hoadon" >
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <select name="Tùy chọn loại khách hàng" id="select-value" name="luachon" required>
+                        <option class="option-item" value="New">Tùy chọn loại khách hàng </option>
+                        <option class="option-item" value="New">New</option>
+                        <option class="option-item" value="Regular">Regular</option>
+                        <option class="option-item" value="VIP">VIP</option>
+                    </select>
+                </div>
+                <div class="clear"></div>
+                <div class="col">
+                    <label class="lb-2" for="">Chi tiết mô tả:</label> <br>
+                    <textarea id="input-description" name="mota"></textarea>
+                </div>
+             
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button onclick="send()" class="btn-2 "  type="submit"> Gửi ý kiến </button>
+                </div>
+                
+            </div>
+       </form>
+    </div>
+
+
+    <!-- Bài 3 -->
+        <h3> Bài 3 :  </h3>
+
+    <div class="bai3">
+        <form action="" name="dataform3">
+            <h1 class="tiude-3">Contact form </h1>
+    
+        <div class="row-p3">
+            <div class="col-half">
+                <div class="col-p3">
+                    <h3 class="infor">Thông tin </h3>
+                   <p><i class="fa-solid fa-location-dot"></i> 130 Đường số 9, quận Gò Vấp, TP.HCM</p>
+                   <p><i class="fa-solid fa-envelope"></i> thanhvann@vaithuhay.com</p>
+                   <p><i class="fa-solid fa-phone"></i> 0912417238</p>
+                   
+                </div>
+    
+                <div class="col-p3">
+                    <h3 class="infor-to-me">Hãy liên lạc với chúng tôi!!</h3>
+                    <input class="input-grp3" type="text" placeholder="Họ và tên " name="ten">
+                    <input class="input-grp3" type="email" placeholder="Địa chỉ email " name="mail3">
+                    <input class="input-grp3" type="text" placeholder="Tiêu đề bài viết " name="title">
+                    <input class="input-grp3" type="text" placeholder="Số điện thoại" name="phone">
+                    <textarea name="contact" id="contact-p3" cols="30" rows="10"></textarea>
+                    <button onclick="sent()" class="btn-b3" type="submit"> Gửi thông tin </button>
+                </div>
+            
+
+    
+            </div>
+            <div class="clear"></div>
+    
+    
+        </div>
+    
+    
+        </form>
+    </div>
+
+    <!-- Bài 4 -->
+        <h3> Bài 4 :  </h3>
+
+
+    <div class="bai4">
+        <h1 class="title-4">Bảng tính BMI
+        </h1>
+        <section>
+            <form action="" class="cal">
+                <div class="wei-grp">
+                    <label class="num-we" for="">Nhập cân nặng ?</label>
+                    <input type="number" placeholder="kg" id="weight">
+                </div>
+                <div class="hei-grp">
+                    <label class="num-he" for="">Nhập chiều cao ?</label>
+                    <input type="number" placeholder="cm" id="height">
+                </div>
+                <div class="selc">
+                    <select name="" class="selc-age">
+                        <option value="">Trung niên </option>
+                        <option value="">Trung niên, già lớn tuổi  </option>
+                        <option value="">Già lớn tuổi </option>
+    
+                    </select>
+                </div>
+    
+    
+    
+               <div class="btn-grp4">
+                <button onclick="calculate()" class="btn-p4" value="tinhbmi" type="button" >Tính Bmi </button>
+               </div>
+
+               <div id="bmi-output"></div>
+               <div id="total"></div>
+
+            </form>
+    
+           
+        </section>
+    </div>
+
+
+
+
+
+    <!-- Bài 5 -->
+    <div class="phude">
+        <h1> Bài 5 :  </h1>
+    </div>
+
+    <div class="box-5">
+        
+        <div class="form-login">
+            <h1 class="hd-5">Login</h1>
+            <form action="" class="login-form" name="form5">
+                <div class="input-type">
+                    <input  class="type-ip" type="text" name="username" required>
+                    <span></span>
+                    <label  for="">User <i class="ti-user"></i></label>
+                </div>
+                <div class="input-type">
+                    <input class="type-ip"  type="password" name="pass"  required>
+                    <span></span>
+                    <label  for="">Password <i class="ti-key"></i></label>
+                </div>
+                
+
+                <div class="remem">
+                    <label for="">Lưu đăng nhập </label>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <button id="login-btn" onclick="login()" type="submit">Login </button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Bài 6 -->
+        <h3> Bài 6 :  </h3>
+
+    <div class="bai6">
+        <div class="wrapper">
+            <form action="">
+                <h1 class="login-hd">Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="user name ">
+                    <i class="ti-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password ">
+                    <i class="ti-lock"></i>
+                </div>
+                <div class="remember-forgot">
+                    <a href="#">Quên mật khẩu</a>
+                </div>
+                <button class="btn-login" type="submit">Log in</button>
+                <br>
+                <button class="signup" type="submit"> <i class="fa-solid fa-user-plus"></i> Sign Up</button> 
+                </div>
+    
+            </form>
+        </div>
+    </div>
+   <div></div>
+
+
+</body>
+</html>
